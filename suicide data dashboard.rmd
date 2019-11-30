@@ -30,7 +30,7 @@ library(plotly) # Interactive data visualizations
 
 ```{r include=FALSE}
 # Read in data. 
-data <- read.csv('master.csv') %>%
+data <- read.csv('https://raw.githubusercontent.com/SabaTavoosi/Suicide-data---Interactive-dashboard/master/master.csv') %>%
   filter(year != 2016, # filter out 2016 and countries with 0 data. 
          country != 'Dominica',
          country != 'Saint Kitts and Nevis')
